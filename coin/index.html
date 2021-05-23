@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin  |  Price</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/bitcoin.png" type="image/x-icon">
+</head>
+<body>
+    <div class="box" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+        <img src="img/bitcoin.png" alt="">
+        <p>Bitcoin narxi</p>
+        <span id="price"></span>
+        <a href="https://en.wikipedia.org/wiki/Bitcoin">BTC haqida</a>
+    </div>
+    <footer>
+        <p>Powered by &nbsp;&nbsp;<a href="https://github.com/Alisher-Usmonov" target="_blank">Alisher Usmonov</a></p>
+    </footer>
+    <script src="js/demo.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".box"), {
+            max: 25,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".box"));
+    </script>
+</body>
+</html>

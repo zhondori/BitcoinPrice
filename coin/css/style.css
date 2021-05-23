@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+body {
+  background: linear-gradient(to right, #333, #444, #555, #666);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  backdrop-filter: blur(40px); }
+
+.box {
+  width: 250px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  overflow: hidden;
+  position: relative; }
+  .box::before {
+    content: '';
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    top: -35px;
+    right: -15px;
+    transform-style: preserve-3d;
+    transform: rotateZ(-45deg);
+    background: #038eff; }
+  .box::after {
+    content: '';
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    bottom: -35px;
+    left: -15px;
+    transform-style: preserve-3d;
+    transform: rotateZ(-45deg);
+    background: #00ff6a; }
+  .box img {
+    width: 100px;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    margin-top: 30px;
+    transform-style: preserve-3d;
+    transform: translateZ(40px); }
+  .box p {
+    font-size: 26px;
+    padding-bottom: 5px;
+    color: orange;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 2px 3px 0 #302f2f;
+    user-select: none; }
+  .box span {
+    font-size: 21px;
+    color: #fff;
+    letter-spacing: 1px; }
+  .box a {
+    text-decoration: none;
+    margin-top: 20px;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 3px solid orange;
+    transition: .3s ease all;
+    transform-style: preserve-3d;
+    transform: translateZ(40px); }
+    .box a:hover {
+      background: orange;
+      color: #000; }
+
+footer {
+  position: absolute;
+  bottom: 15px; }
+  footer p {
+    color: #FFF;
+    letter-spacing: 1px;
+    font-weight: 300; }
+  footer a {
+    text-decoration: none;
+    color: #00f7ff;
+    letter-spacing: 1px;
+    transition: .3s ease all; }
+    footer a:hover {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
